@@ -1,0 +1,108 @@
+<!-- modal dialog-->
+<div id="admin-wrapper">
+
+  <!-- modal header-->
+  <div fxLayout="row" fxLayoutGap="2%">
+      <div fxFlex="93%">
+        <h2 mat-dialog-title class="fwt100">Loreum Ipsum</h2>
+      </div>
+      <div fxFlex="5%">
+        <mat-dialog-actions>
+          <button mat-dialog-close class="close-btn">
+            <mat-icon class="s-16 mr-5">close</mat-icon>
+          </button>
+        </mat-dialog-actions>
+      </div>
+  </div><!-- modal header / -->
+
+  <mat-divider></mat-divider>
+
+  <mat-dialog-content>
+    <!-- modal content / -->
+    <div class="table-top  mr-t2">
+          <div fxLayout="row" fxLayoutGap="2%">
+              <div fxFlex="50%" fxLayoutAlign="start center">
+                <h5>Loreum Ipsum</h5>
+              </div>
+              <div fxFlex="50%" fxLayoutAlign="start center">
+                <p>Test</p>
+              </div>
+          </div><!-- modal header / -->
+    </div>
+    <div class="admin-content">
+      
+      <div class="admin-main-wrapper admin-upload" fxFlex="100">
+          <div class="admin-data-table">
+                <div class="">
+                  
+                   <mat-table [dataSource]="dataSource" class="table-bordered">
+                  
+                    <ng-container matColumnDef="data1">
+                      <mat-header-cell *matHeaderCellDef [ngClass]="'customWidthClass1'">Loreum Ipsum</mat-header-cell>
+                      <mat-cell *matCellDef="let item" [ngClass]="'customWidthClass1'"> {{item.data1}} </mat-cell>
+                    </ng-container>
+
+                    <ng-container matColumnDef="data2">
+                      <mat-header-cell *matHeaderCellDef [ngClass]="'customWidthClass2'">Loreum Ipsum</mat-header-cell >
+                      <mat-cell *matCellDef="let item" [ngClass]="'customWidthClass2'"> <mat-icon class="cgreen">check_circle</mat-icon> </mat-cell>
+                    </ng-container>
+
+
+                    <mat-header-row *matHeaderRowDef="['data1', 'data2']"></mat-header-row>
+                    <mat-row *matRowDef="let row; columns: ['data1', 'data2'];"></mat-row>
+                    <mat-row
+                        *matRowDef="let row; columns: ['data1']; when: isExtendedRow"
+                        class="darken">
+                    </mat-row>
+
+                  </mat-table>
+                   
+                </div>
+            </div>
+            <!-- end-data-table -->
+                
+         
+            
+        </div>
+    </div><!-- modal content/ -->
+
+    <mat-divider></mat-divider>
+
+    <!-- modal footer/ -->
+    <div class="admin-footer">
+      <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutGap="20px" class="bgs">
+        <div fxFlex="100" fxLayoutAlign="end center" fxLayoutAlign.xs="center center" [fxLayout]="'row wrap'">
+
+              <!--btn 3-->
+          <button type="submit" mat-button class="user-button btngreen mr-br mr-r1"  (click)="onSubmit()">
+            <div fxLayout="row" class="cwhite font13" fxLayoutAlign="center center">
+               <mat-icon class="s-16 mr-12">remove_red_eye</mat-icon>
+                <span class="username">Loreum Ipsum</span>
+            </div>
+           </button><!--btn 3/-->
+
+            <!--btn 2-->
+           <button type="button" mat-button class="user-button btnred mr-br mr-r1 mbl-mr-tb">
+            <div fxLayout="row" class="cwhite font13" fxLayoutAlign="center center">
+               <mat-icon class="s-16 mr-12">remove_red_eye</mat-icon>
+                <span class="username">Loreum Ipsum</span>
+                
+            </div>
+           </button><!--btn 2/-->
+          <!--btn 1-->
+            <button type="button" mat-button class="user-button btngray mr-br mr-r1 mbl-mr-tb" (click)="onNoClick()" type="button">
+            <div fxLayout="row" class="cwhite font13" fxLayoutAlign="center center">
+               <mat-icon class="s-16 mr-12">clear</mat-icon>
+                <span class="username">Loreum Ipsum</span>
+            </div>
+           </button><!--btn 1 /-->
+          
+       
+        </div>
+      </div>
+    </div><!-- modal footer/ -->
+
+
+  </mat-dialog-content>
+
+</div><!-- modal dialog/-->

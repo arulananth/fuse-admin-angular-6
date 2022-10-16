@@ -1,0 +1,100 @@
+<!-- modal dialog-->
+<div id="admin-wrapper">
+
+  <!-- modal header-->
+  <div fxLayout="row" fxLayoutGap="2%">
+      <div fxFlex="93%">
+        <h2 mat-dialog-title class="fwt100">Loreum Ipsum</h2>
+      </div>
+      <div fxFlex="5%">
+        <mat-dialog-actions>
+          <button mat-dialog-close class="close-btn">
+            <mat-icon class="s-16 mr-5">close</mat-icon>
+          </button>
+        </mat-dialog-actions>
+      </div>
+  </div><!-- modal header / -->
+
+  <mat-divider></mat-divider>
+    
+  
+  <mat-dialog-content>
+    <!-- modal content / -->
+    <div class="admin-content mr-t2">
+      <div class="admin-main-wrapper">
+          <!-- form label / -->
+          <div class="admin-main-form  m-pad1">
+             
+              <div fxLayout="row" fxLayout.md="row" fxLayout.xs="column">
+                <div fxFlex = "100" fxLayoutAlign="start center">
+                  <mat-label>Loreum Ipsum <span class="cred">*</span></mat-label>
+                </div>
+                 
+              </div>
+          </div><!-- form label / -->
+                
+          <!--form-start -->
+          <div class="admin-main-form m-pad1">
+              <div fxLayout="row" fxLayout.md="row" fxLayout.xs="column">                
+                  <div fxFlex="90" fxLayoutAlign="center center">
+                      <div class="admin-form-controll">
+                          <mat-form-field appearance="outline">
+                              <input matInput placeholder="Loreum Ipsum" required>
+                          </mat-form-field>
+                      </div>
+                  </div>
+                  <div fxFlex = "10" fxLayoutAlign="start start">
+                    <mat-icon matSuffix matTooltip="Account-Help" class="mr-tb1">help</mat-icon>
+                </div>
+              </div>
+          </div><!--form-end /-->
+          
+
+          <!-- bottom label -->
+          <div class="admin-main-form  m-pad1 mr-b2">
+              <div fxLayout="row" fxLayout.md="row" fxLayout.xs="column">
+                <div fxFlex = "100" fxLayoutAlign="start center">
+                  <mat-label><b>Loreum Ipsum</b></mat-label>
+                </div>                 
+              </div>
+          </div>
+          <!-- bottom label-end/-->
+            
+        </div>
+    </div><!-- modal content/ -->
+
+    <mat-divider></mat-divider>
+
+    <!-- modal footer/ -->
+    <div class="admin-footer">
+      <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutGap="20px" class="bgs">
+        <div fxFlex="100" fxLayoutAlign="end center" fxLayoutAlign.xs="center center" [fxLayout]="'row wrap'">
+          <!--btn 1-->
+            <button mat-button class="user-button btngray mr-br mr-r1 mbl-mr-tb" (click)="onNoClick()">
+            <div fxLayout="row" class="cwhite font13" fxLayoutAlign="center center">
+               <mat-icon class="s-16 mr-12">clear</mat-icon>
+                <span class="username mr-12">Loreum Ipsum</span>
+            </div>
+           </button><!--btn 1 /-->
+           <!--btn 2-->
+           <button mat-button class="user-button btndgray mr-br mr-r1 mbl-mr-tb" (click) ="openDelet()">
+            <div fxLayout="row" class="cwhite font13" fxLayoutAlign="center center">
+               <mat-icon class="s-16 mr-12">send</mat-icon>
+                <span class="username mr-12">Loreum Ipsum</span>
+                
+            </div>
+           </button><!--btn 2/-->
+           <!--btn 3-->
+          <button mat-button class="user-button btngreen mr-br mr-r1">
+            <div fxLayout="row" class="cwhite font13" fxLayoutAlign="center center">
+               <mat-icon class="s-16 mr-12">done</mat-icon>
+                <span class="username mr-12" fxShow.gt-sm>Loreum Ipsum</span>
+            </div>
+           </button><!--btn 3/-->
+        </div>
+      </div>
+    </div><!-- modal footer/ -->
+
+
+  </mat-dialog-content>
+</div><!-- modal dialog/-->

@@ -1,0 +1,12 @@
+{
+    "NAV": {
+        "APPLICATIONS": "Programlar",
+        "SAMPLE"        : {
+            "TITLE": "Örnek",
+            "BADGE": "15"
+        }
+    },
+    "SAMPLE": {
+        "HELLO": "Merhaba Dünya!"
+    }
+}

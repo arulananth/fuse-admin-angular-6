@@ -1,0 +1,60 @@
+<div id="admin-wrapper">
+  <div fxLayout="row" fxLayoutGap="2%">
+        <div fxFlex="93%">
+          <h2 mat-dialog-title class="fwt100">Loreum Ipsum</h2>
+        </div>
+        <div fxFlex="5%">
+          <mat-dialog-actions>
+            <button mat-dialog-close class="close-btn">
+              <mat-icon class="s-16 mr-5" >close</mat-icon>
+            </button>
+          </mat-dialog-actions>
+        </div>
+    </div>
+
+  <mat-divider></mat-divider>
+
+  <mat-dialog-content>
+    <div class="admin-content mr-tb5">
+        <div class="admin-main-wrapper admin-upload">
+             <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutGap="20px">
+                 <div fxFlex="100" fxLayoutAlign="start start" fxLayoutAlign.xs="center center" [fxLayout]="'row wrap'">
+                       
+                         <dropzone [config]="config"  [message]="'Loreum Ipsum'" (error)="onUploadError($event)" (success)="onUploadSuccess($event)"  class="graybtn mr-br mr-r1 mr-tb5"></dropzone>
+                </div>
+               </div>
+
+               <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutGap="20px">
+                 <div fxFlex="100" fxLayoutAlign="stretch stretch" fxLayoutAlign.xs="center center" [fxLayout]="'row wrap'">
+                     <button mat-button class="user-button btngreen mr-br  mr-tb5 mr-lr-8" fxFlex="100" (click)="onNoClick()">
+                          <div fxLayout="row" fxFlex="100" class="cwhite font13" fxLayoutAlign="center center">
+                             <mat-icon class="s-16 mr-12">cloud_upload</mat-icon>
+                              <span class="username">Loreum Ipsum</span>
+                              
+                          </div>
+                         </button>
+                </div>
+               </div>
+        </div>
+
+    </div>
+
+    <mat-divider></mat-divider>
+    <div class="admin-footer">
+            <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutGap="20px" class="bgs">
+
+            <div fxFlex="100" fxLayoutAlign="end center" fxLayoutAlign.xs="center center" [fxLayout]="'row wrap'">
+                          <button mat-button class="user-button btngray mr-br mr-r1 mbl-mr-tb" (click)="onNoClick()">
+                          <div fxLayout="row" class="cwhite font13" fxLayoutAlign="center center">
+                             <mat-icon class="s-16 mr-12">clear</mat-icon>
+                              <span class="username">Loreum Ipsum</span>
+                          </div>
+                         </button>
+            </div>
+         </div>
+        </div>
+      </mat-dialog-content>
+</div>
+
+
+

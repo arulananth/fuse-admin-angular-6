@@ -1,0 +1,460 @@
+<div class="page-layout blank" id="admin-wrapper">
+ <form class="admin-form" [formGroup]="addedForm">
+    <!--form content-->
+    <div class="admin-content">
+        <div class="admin-main-wrapper">
+            <mat-expansion-panel [expanded]="true" [disabled]="true">
+
+                <!-- main panal-title -->
+                <mat-expansion-panel-header class="panelHeader">
+                    <mat-panel-title class="main-tille">
+                       Loreum Ipsum
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <!-- end title -->
+          
+                <!-- main form-start 1 -->
+                <div class="admin-main-form mr-tb5 br-t-dotted m-pad1 pad-l10 pad-r10 pad-lr3-rem  ">
+                    <div fxLayout="row" fxLayout.md="row" fxLayout.xs="column">
+                    	
+                        <div fxFlex="100" fxLayoutAlign="center center">
+                            <div class="admin-form-controll pad-r10">
+                                <mat-form-field>
+                                     <mat-label>Loreum Ipsum</mat-label>
+                                     <input matInput placeholder="Loreum Ipsum" formControlName="addfield" required>
+                                     <mat-error *ngIf="submitted && f.addfield.errors">Please enter valid details</mat-error>
+                                </mat-form-field>
+                            </div>
+                            <mat-icon matSuffix class="pad-r10" popover="Loreum Ipsum"
+                               popoverTitle="Loreum Ipsum"
+                               popoverPlacement="left"
+                               [popoverOnHover]="true"
+                               [popoverCloseOnClickOutside]="true"
+                               [popoverCloseOnMouseOutside]="false"
+                               [popoverDisabled]="false"
+                               [popoverAnimation]="true"
+                               [popoverDismissTimeout]="10000">help
+                          </mat-icon>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- main form-end -->
+
+                <!-- main form-start 1 -->
+                <div class="admin-main-form mr-tb5 br-t-dotted m-pad1 pad-l10 pad-r10 pad-lr3-rem">
+                    <div fxLayout="row" fxLayout.md="row" fxLayout.xs="column">
+                        
+                        <div fxFlex="100" fxLayoutAlign="center center">
+                            <div class="admin-form-controll pad-r10">
+                                <mat-form-field>
+                                    <mat-label>Loreum Ipsum</mat-label>
+                                     <input matInput placeholder="Loreum Ipsum" formControlName="addfield1" required>
+                                     <mat-error *ngIf="submitted && f.addfield1.errors">Please enter valid details</mat-error>
+                                </mat-form-field>
+                            </div>
+                            <mat-icon matSuffix class="pad-r10" popover="Loreum Ipsum"
+                               popoverTitle="Loreum Ipsum"
+                               popoverPlacement="left"
+                               [popoverOnHover]="true"
+                               [popoverCloseOnClickOutside]="true"
+                               [popoverCloseOnMouseOutside]="false"
+                               [popoverDisabled]="false"
+                               [popoverAnimation]="true"
+                               [popoverDismissTimeout]="10000">help
+                          </mat-icon>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- main form-end -->
+
+
+                <!-- main form-start -->
+                <div class="admin-main-form mr-tb5 br-t-dotted m-pad1 adminform-success pad-l10 pad-r10 pad-lr3-rem  ">
+                    <div fxLayout="row" fxLayout.md="row" fxLayout.xs="column">
+                        
+                        <div fxFlex="100" fxLayoutAlign="center center">
+                            <div class="admin-form-controll pad-r10">
+                                <mat-form-field>
+                                    <mat-label>Loreum Ipsum</mat-label>
+                                    <mat-select placeholder="Select" formControlName="selectControl5" required>
+                                      <mat-option>--</mat-option>  
+                                      <mat-option value="option">Option</mat-option>
+                                      <mat-option value="option">Option</mat-option>
+                                      <mat-option value="option">Option</mat-option>
+                                    </mat-select>
+                                    <mat-error *ngIf="submitted && f.selectControl5.errors">Please enter valid details</mat-error>
+                                </mat-form-field>
+                               
+                            </div>
+                            <mat-icon matSuffix class="pad-r10" popover="Loreum Ipsum"
+                               popoverTitle="Loreum Ipsum"
+                               popoverPlacement="left"
+                               [popoverOnHover]="true"
+                               [popoverCloseOnClickOutside]="true"
+                               [popoverCloseOnMouseOutside]="false"
+                               [popoverDisabled]="false"
+                               [popoverAnimation]="true"
+                               [popoverDismissTimeout]="10000">help
+                          </mat-icon>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- main form-end -->
+
+
+
+                <!-- main form-start -->
+                <div class="admin-main-form mr-tb5 br-t-dotted m-pad1 adminform-success pad-l10 pad-r10 pad-lr3-rem  ">
+                    <div fxLayout="row" fxLayout.md="row" fxLayout.xs="column">
+                        
+                        <div fxFlex="100" fxLayoutAlign="center center">
+                            <div class="admin-form-controll pad-r10">
+                                <mat-form-field>
+                                    <mat-label>Loreum Ipsum</mat-label>
+                                    <mat-select placeholder="Select" formControlName="selectControl4" required>
+                                      <mat-option>--</mat-option>  
+                                      <mat-option value="option">Option</mat-option>
+                                      <mat-option value="option">Option</mat-option>
+                                      <mat-option value="option">Option</mat-option>
+                                    </mat-select>
+                                    <mat-error *ngIf="submitted && f.selectControl4.errors">Please enter valid details</mat-error>
+                                </mat-form-field>
+                               
+                            </div>
+                            <mat-icon matSuffix class="pad-r10" popover="Loreum Ipsum"
+                               popoverTitle="Loreum Ipsum"
+                               popoverPlacement="left"
+                               [popoverOnHover]="true"
+                               [popoverCloseOnClickOutside]="true"
+                               [popoverCloseOnMouseOutside]="false"
+                               [popoverDisabled]="false"
+                               [popoverAnimation]="true"
+                               [popoverDismissTimeout]="10000">help
+                          </mat-icon>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- main form-end -->
+
+
+
+                <!-- main form-start -->
+                <div class="admin-main-form mr-tb5 br-t-dotted m-pad1 adminform-success pad-l10 pad-r10 pad-lr3-rem  ">
+                    <div fxLayout="row" fxLayout.md="row" fxLayout.xs="column">
+                       
+                        <div fxFlex="100" fxLayoutAlign="center center">
+                            <div class="admin-form-controll pad-r10">
+                                <mat-form-field>
+                                    <mat-label>Loreum Ipsum</mat-label>
+                                    <mat-select placeholder="Select" formControlName="selectControl3" required>
+                                      <mat-option>--</mat-option>  
+                                      <mat-option value="option">Option</mat-option>
+                                      <mat-option value="option">Option</mat-option>
+                                      <mat-option value="option">Option</mat-option>
+                                    </mat-select>
+                                    <mat-error *ngIf="submitted && f.selectControl3.errors">Please enter valid details</mat-error>
+                                </mat-form-field>
+                               
+                            </div>
+                            <mat-icon matSuffix class="pad-r10" popover="Loreum Ipsum"
+                               popoverTitle="Loreum Ipsum"
+                               popoverPlacement="left"
+                               [popoverOnHover]="true"
+                               [popoverCloseOnClickOutside]="true"
+                               [popoverCloseOnMouseOutside]="false"
+                               [popoverDisabled]="false"
+                               [popoverAnimation]="true"
+                               [popoverDismissTimeout]="10000">help
+                          </mat-icon>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- main form-end -->
+
+                <!-- main form-start 1 -->
+                <div class="admin-main-form mr-tb5 br-t-dotted m-pad1 pad-l10 pad-r10 pad-lr3-rem  ">
+                    <div fxLayout="row" fxLayout.md="row" fxLayout.xs="column">
+                       
+                        <div fxFlex="100" fxLayoutAlign="center center">
+                            <div class="admin-form-controll pad-r10">
+                                <mat-form-field>
+                                    <mat-label>Loreum Ipsum</mat-label>
+                                     <input matInput placeholder="Loreum Ipsum" formControlName="addfield2" required>
+                                     <mat-error *ngIf="submitted && f.addfield2.errors">Please enter valid details</mat-error>
+                                </mat-form-field>
+                            </div>
+                            <mat-icon matSuffix class="pad-r10" popover="Loreum Ipsum"
+                               popoverTitle="Loreum Ipsum"
+                               popoverPlacement="left"
+                               [popoverOnHover]="true"
+                               [popoverCloseOnClickOutside]="true"
+                               [popoverCloseOnMouseOutside]="false"
+                               [popoverDisabled]="false"
+                               [popoverAnimation]="true"
+                               [popoverDismissTimeout]="10000">help
+                          </mat-icon>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- main form-end -->
+
+                <!-- main form-start 1 -->
+                <div class="admin-main-form mr-tb5 br-t-dotted m-pad1 pad-l10 pad-r10 pad-lr3-rem  ">
+                    <div fxLayout="row" fxLayout.md="row" fxLayout.xs="column">
+                        
+                        <div fxFlex="100" fxLayoutAlign="center center">
+                            <div class="admin-form-controll pad-r10">
+                                <mat-form-field>
+                                    <mat-label>Loreum Ipsum</mat-label>
+                                     <input matInput placeholder="Loreum Ipsum" formControlName="addfield3" required>
+                                     <mat-icon matSuffix>border_color</mat-icon>
+                                     <mat-error *ngIf="submitted && f.addfield3.errors">Please enter valid details</mat-error>
+                                </mat-form-field>
+                            </div>
+                            <mat-icon matSuffix class="pad-r10" popover="Loreum Ipsum"
+                               popoverTitle="Loreum Ipsum"
+                               popoverPlacement="left"
+                               [popoverOnHover]="true"
+                               [popoverCloseOnClickOutside]="true"
+                               [popoverCloseOnMouseOutside]="false"
+                               [popoverDisabled]="false"
+                               [popoverAnimation]="true"
+                               [popoverDismissTimeout]="10000">help
+                          </mat-icon>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- main form-end -->
+
+                <!-- main form-start 1 -->
+                <div class="admin-main-form mr-tb5 br-t-dotted m-pad1 pad-l10 pad-r10 pad-lr3-rem  ">
+                    <div fxLayout="row" fxLayout.md="row" fxLayout.xs="column">
+                        
+                        <div fxFlex="100" fxLayoutAlign="center center">
+                            <div class="admin-form-controll pad-r10">
+                                <mat-form-field>
+                                     <mat-label>Loreum Ipsum</mat-label>
+                                     <input matInput placeholder="Loreum Ipsum" formControlName="addfield4" required>
+                                     <mat-error *ngIf="submitted && f.addfield4.errors">Please enter valid details</mat-error>
+                                </mat-form-field>
+                            </div>
+                            <mat-icon matSuffix class="pad-r10" popover="Loreum Ipsum"
+                               popoverTitle="Loreum Ipsum"
+                               popoverPlacement="left"
+                               [popoverOnHover]="true"
+                               [popoverCloseOnClickOutside]="true"
+                               [popoverCloseOnMouseOutside]="false"
+                               [popoverDisabled]="false"
+                               [popoverAnimation]="true"
+                               [popoverDismissTimeout]="10000">help
+                          </mat-icon>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- main form-end -->
+
+                <!-- main form-start -->
+                <div class="admin-main-form mr-tb5 br-t-dotted m-pad1 pad-l10 pad-r10 pad-lr3-rem  ">
+                    <div fxLayout="row" fxLayout.md="row" fxLayout.xs="column">
+                        
+                        <div fxFlex="100" fxLayoutAlign="center center">
+                            <div class="admin-form-controll pad-r10">
+                                <mat-form-field>
+                                    <mat-label>Loreum Ipsum</mat-label>
+                                    <mat-select placeholder="Select" formControlName="selectControl2" required>
+                                      <mat-option>--</mat-option>  
+                                      <mat-option value="option">Option</mat-option>
+                                      <mat-option value="option">Option</mat-option>
+                                      <mat-option value="option">Option</mat-option>
+                                    </mat-select>
+                                    <mat-error *ngIf="submitted && f.selectControl2.errors">Please enter valid details</mat-error>
+                                </mat-form-field>
+                               
+                            </div>
+                            <mat-icon matSuffix class="pad-r10" popover="Loreum Ipsum"
+                               popoverTitle="Loreum Ipsum"
+                               popoverPlacement="left"
+                               [popoverOnHover]="true"
+                               [popoverCloseOnClickOutside]="true"
+                               [popoverCloseOnMouseOutside]="false"
+                               [popoverDisabled]="false"
+                               [popoverAnimation]="true"
+                               [popoverDismissTimeout]="10000">help
+                          </mat-icon>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- main form-end -->
+
+               <!-- main form-start 1 -->
+                <div class="admin-main-form mr-tb5 br-t-dotted m-pad1 pad-l10 pad-r10 pad-lr3-rem  ">
+                    <div fxLayout="row" fxLayout.md="row" fxLayout.xs="column">
+                       
+                        <div fxFlex="100" fxLayoutAlign="center center">
+                            <div class="admin-form-controll pad-r10">
+                                <mat-form-field>
+                                    <mat-label>Loreum Ipsum</mat-label>
+                                     <input matInput placeholder="Loreum Ipsum" formControlName="addfield5" required>
+                                     <mat-error *ngIf="submitted && f.addfield5.errors">Please enter valid details</mat-error>
+                                </mat-form-field>
+                            </div>
+                            <mat-icon matSuffix class="pad-r10" popover="Loreum Ipsum"
+                               popoverTitle="Loreum Ipsum"
+                               popoverPlacement="left"
+                               [popoverOnHover]="true"
+                               [popoverCloseOnClickOutside]="true"
+                               [popoverCloseOnMouseOutside]="false"
+                               [popoverDisabled]="false"
+                               [popoverAnimation]="true"
+                               [popoverDismissTimeout]="10000">help
+                          </mat-icon>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- main form-end -->
+
+                <!-- main form-start 1 -->
+                <div class="admin-main-form mr-tb5 br-t-dotted m-pad1 pad-l10 pad-r10 pad-lr3-rem  ">
+                    <div fxLayout="row" fxLayout.md="row" fxLayout.xs="column">
+                       
+                        <div fxFlex="100" fxLayoutAlign="center center">
+                            <div class="admin-form-controll pad-r10">
+                                <mat-form-field>
+                                    <mat-label>Loreum Ipsum</mat-label>
+                                     <input matInput placeholder="Loreum Ipsum" formControlName="addfield6" required>
+                                     <mat-error *ngIf="submitted && f.addfield6.errors">Please enter valid details</mat-error>
+                                </mat-form-field>
+                            </div>
+                            <mat-icon matSuffix class="pad-r10" popover="Loreum Ipsum"
+                               popoverTitle="Loreum Ipsum"
+                               popoverPlacement="left"
+                               [popoverOnHover]="true"
+                               [popoverCloseOnClickOutside]="true"
+                               [popoverCloseOnMouseOutside]="false"
+                               [popoverDisabled]="false"
+                               [popoverAnimation]="true"
+                               [popoverDismissTimeout]="10000">help
+                          </mat-icon>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- main form-end -->
+
+
+                <!-- main form-start -->
+                <div class="admin-main-form mr-tb5 br-t-dotted m-pad1 pad-l10 pad-r10 pad-lr3-rem  ">
+                    <div fxLayout="row" fxLayout.md="row" fxLayout.xs="column">
+                       
+                        <div fxFlex="100" fxLayoutAlign="center center">
+                            <div class="admin-form-controll pad-r10">
+                                <mat-form-field>
+                                    <mat-label>Loreum Ipsum</mat-label>
+                                    <mat-select placeholder="Select" formControlName="selectControl1" required>
+                                      <mat-option>--</mat-option>  
+                                      <mat-option value="option">Option</mat-option>
+                                      <mat-option value="option">Option</mat-option>
+                                      <mat-option value="option">Option</mat-option>
+                                    </mat-select>
+                                    <mat-error *ngIf="submitted && f.selectControl1.errors">Please enter valid details</mat-error>
+                                </mat-form-field>
+                               
+                            </div>
+                            <mat-icon matSuffix class="pad-r10" popover="Loreum Ipsum"
+                               popoverTitle="Loreum Ipsum"
+                               popoverPlacement="left"
+                               [popoverOnHover]="true"
+                               [popoverCloseOnClickOutside]="true"
+                               [popoverCloseOnMouseOutside]="false"
+                               [popoverDisabled]="false"
+                               [popoverAnimation]="true"
+                               [popoverDismissTimeout]="10000">help
+                          </mat-icon>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- main form-end -->
+
+
+                <!-- main form-start -->
+                <div class="admin-main-form mr-tb5 br-t-dotted m-pad1 pad-l10 pad-r10 pad-lr3-rem  ">
+                    <div fxLayout="row" fxLayout.md="row" fxLayout.xs="column">
+                        <div fxFlex="100" fxLayoutAlign="center center">
+                            <div class="admin-form-controll pad-r10">
+                                <mat-form-field>
+                                    <mat-label>Loreum Ipsum</mat-label>
+                                    <mat-select placeholder="Select" formControlName="selectControl" required>
+                                      <mat-option>--</mat-option>  
+                                      <mat-option value="option">Option</mat-option>
+                                      <mat-option value="option">Option</mat-option>
+                                      <mat-option value="option">Option</mat-option>
+                                    </mat-select>
+                                    <mat-error *ngIf="submitted && f.selectControl.errors">Please enter valid details</mat-error>
+                                </mat-form-field>
+                               
+                            </div>
+                            <mat-icon matSuffix class="pad-r10" popover="Loreum Ipsum"
+                               popoverTitle="Loreum Ipsum"
+                               popoverPlacement="left"
+                               [popoverOnHover]="true"
+                               [popoverCloseOnClickOutside]="true"
+                               [popoverCloseOnMouseOutside]="false"
+                               [popoverDisabled]="false"
+                               [popoverAnimation]="true"
+                               [popoverDismissTimeout]="10000">help
+                          </mat-icon>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- main form-end -->
+
+
+               
+            </mat-expansion-panel>
+        </div>
+    </div> <!--form content /-->
+
+     <!--form footer-->
+    <div class="admin-footer">
+        <div fxLayout="row" fxLayout.lt-sm="column"  class="bgs pad-lr3-rem">
+			<div fxFlex="100" [fxLayout]="'row wrap'" fxLayoutAlign.xs="center center"fxLayoutAlign="end center" >
+                 <!--btn 1-->
+			    <button  mat-button class="user-button btngreen mr-br mr-r1 mbl-mr-tb" type="submit" (click) ="onSubmit()">
+                  <div fxLayout="row" class="cwhite font13" fxLayoutAlign="center center">
+                     <mat-icon class="s-16 mr-12">save</mat-icon>
+                      <span class="username">Loreum Ipsum</span>
+                  </div>
+                 </button><!--btn 1/-->
+                 <!--btn 2-->
+                 <button type="button" mat-button class="user-button btngray mr-br mr-r1 mbl-mr-tb" (click)="btnClickhome()">
+                  <div fxLayout="row" class="cwhite font13" fxLayoutAlign="center center">
+                     <mat-icon class="s-16 mr-12">clear</mat-icon>
+                      <span class="username">Loreum Ipsum</span>
+                  </div>
+                 </button><!--btn 2-->
+			</div>
+		</div>
+    </div> <!--form content .-->
+
+
+    <div class="admin-success pad30" *ngIf="successmsgs">
+        <div fxLayout="row" fxLayout.lt-sm="column">
+            <div fxFlex="100" fxLayoutAlign="center center" fxLayoutAlign.xs="center center" [fxLayout]="'row wrap'" class="success-msg">
+                <p>Data added successfully</p>
+            </div>
+        </div>
+    </div>
+</form>
+</div>

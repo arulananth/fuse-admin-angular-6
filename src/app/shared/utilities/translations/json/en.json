@@ -1,0 +1,12 @@
+{
+    "NAV": {
+        "APPLICATIONS": "Applications",
+        "SAMPLE"        : {
+            "TITLE": "Sample",
+            "BADGE": "25"
+        }
+    },
+    "SAMPLE": {
+        "HELLO": "Hello, World!"
+    }
+}

@@ -1,0 +1,177 @@
+$panal-clor :#9967a5;
+$test : #ffffff;
+
+#admin-wrapper {
+  @media only screen and (min-width: 800px)
+  {
+    .customWidthClass{
+         flex: 0 0 225px;
+      }
+       .customWidthClass2{
+         flex: 0 0 200px;
+      }
+  }
+    .admin-content {
+        display: flex;
+        flex: 1 1 auto;
+        padding: 32px;
+        min-width: 0;
+        @media only screen and (max-width: 767px){
+            padding: 20px;
+        } 
+        
+        .admin-main-wrapper {
+            display: flex;
+            flex-direction: column;
+            flex: 1 1 auto;
+            min-width: 0;
+            &.admin-tables
+            {
+              border-bottom: 1px solid #e6e6e6;
+            }
+            .panelHeader{
+                background-color: $panal-clor;
+        
+                .main-tille{
+                    color: $test;
+                    font-size: 1.8rem;
+                }
+            }
+            .admin-main-form{
+                margin-top: 15px;
+            }
+                
+            .admin-data-table{
+                margin-top: 15px;
+
+                .mat-elevation-z8{
+                    overflow-x: auto;
+                    box-shadow:none;
+
+                    table{
+                       border:1px solid #ccc;
+                        width: 100%;
+                        tr{
+                            &.darken
+                            {
+                              th,td{
+                                border:none !important;
+                                font-weight:bold;
+                                font-size:2rem;
+                              }
+                            }
+                            th{
+                               
+                                padding: 10px;
+                                border:1px solid #ccc;
+
+                                font-weight:bold;
+                                font-size:1.5rem;
+                            }
+                            td{
+                                padding: 10px;
+                               border:1px solid #ccc;
+                            }
+                        }
+                       
+                        
+                    }
+                    .mat-table.table-bordered
+                    {
+                      min-width:500px;
+                      overflow-x:auto;
+                      border: solid 1px #fafbfc;
+                      
+                      .mat-header-cell
+                      {
+                        color:#000 !important;
+                        font-weight: bold;
+                        font-size:1.7rem
+                      }
+                      .mat-row
+                      {
+                        &:nth-child(odd) {background: #fafbfc}
+                        &.darken
+                        {
+                          .mat-cell
+                          {
+                            font-weight: bold;
+                            font-size:1.7rem
+                          }
+                        }
+                        height:70px !important;
+
+                        .mat-cell
+                        {
+
+                          img
+                          {
+                            width:50px !important;
+                          }
+                        }
+                      }
+                    }
+                }
+                .br-5
+                {
+                    border-radius:5rem;
+                }
+            }            
+        }    
+    } 
+}    
+
+.admin-form-controll {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    margin-bottom: 1.5rem;
+    position: relative;
+  }
+  .admin-button-option-row {
+    display: block;
+    >button {
+      margin-right: .5rem;
+    }
+  }
+  
+  @media only screen and (max-width: 767px) {
+    button {
+      margin-bottom: .5rem;
+    }
+  }  
+
+:host /deep/
+{
+    
+     .btngreen
+      {
+        background-color:#2ecc71;
+        color:#fff !important;
+        border:1px solid #2ecc71;
+      }
+
+      .btnyellow
+      {
+        background-color:#f1c40f;
+        color:#fff !important;
+        border:1px solid #f1c40f;
+      }
+
+      .btnyellow.btngreen
+      {
+        background-color:#2ecc71 !important;
+        color:#fff !important;
+        border:1px solid #2ecc71 !important;
+      }
+
+      .mat-button-focus-overlay 
+      {
+          background-color: rgba(0,0,0,0) !important;
+       }
+
+      .mat-expansion-panel
+       {
+        box-shadow:none !important;
+       }
+}

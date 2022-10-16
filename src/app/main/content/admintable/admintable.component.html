@@ -1,0 +1,64 @@
+<div class="page-layout blank" id="admin-wrapper">
+    <div class="admin-content">
+        <div class="admin-main-wrapper  admin-tables">
+            <mat-expansion-panel [expanded]="true" [disabled]="true">
+
+                <!-- main panal-title -->
+                <mat-expansion-panel-header class="panelHeader">
+                    <mat-panel-title class="main-tille">
+                        Loreum Ipsum
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <!-- end title -->
+
+                <!-- main form-start -->
+     <!-- main data table start -->
+            <div class="admin-data-table">
+                <div class="mat-elevation-z8">
+                  
+                   <mat-table [dataSource]="dataSource" class="table-bordered">
+                  
+                    <ng-container matColumnDef="data1">
+                      <mat-header-cell *matHeaderCellDef [ngClass]="'customWidthClass1'">Loreum Ipsum</mat-header-cell>
+                      <mat-cell *matCellDef="let item" [ngClass]="'customWidthClass1'"> {{item.data1}} </mat-cell>
+                    </ng-container>
+
+                    <ng-container matColumnDef="data2">
+                      <mat-header-cell *matHeaderCellDef [ngClass]="'customWidthClass2'">Loreum Ipsum</mat-header-cell >
+                      <mat-cell *matCellDef="let item" [ngClass]="'customWidthClass2'">  <img class="flag mr-8 br-5" [src]="'assets/images/avatars/'+item.data2+'.jpg'"> </mat-cell>
+                    </ng-container>
+
+                     <ng-container matColumnDef="data3">
+                      <mat-header-cell *matHeaderCellDef [ngClass]="'customWidthClass'">Loreum Ipsum</mat-header-cell>
+                      <mat-cell *matCellDef="let item;let i=index;" (click)="$event.stopPropagation()" [ngClass]="'customWidthClass'">
+                        <div class="data-table-crude"> 
+                            <button mat-button class="user-button mr-br mr-r1 btnyellow"  [ngClass]="isClicked[i] ? 'btngreen':'btnyellow'" (click)="isClicked[i] = (isClicked[i]? false :true )">
+                              <div fxLayout="row" class="cwhite font13" fxLayoutAlign="center center">
+                                 <mat-icon class="mr-12">{{isClicked[i] && 'toggle_on' || 'toggle_off'}}</mat-icon>
+                                  <span class="username">Loreum Ipsum</span>
+                              </div>
+                             </button>
+                        </div>
+                     </mat-cell>
+                    </ng-container>
+
+                    <mat-header-row *matHeaderRowDef="['data1', 'data2','data3']"></mat-header-row>
+                    <mat-row *matRowDef="let row; columns: ['data1', 'data2','data3'];"></mat-row>
+                    <mat-row
+                        *matRowDef="let row; columns: ['data1']; when: isExtendedRow"
+                        class="darken">
+                    </mat-row>
+
+                  </mat-table>
+                   
+                </div>
+            </div>
+            <!-- end-data-table -->
+                <!-- main form-end -->
+
+            </mat-expansion-panel>
+
+
+        </div>
+    </div>
+</div>

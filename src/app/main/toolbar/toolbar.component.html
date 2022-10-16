@@ -1,0 +1,110 @@
+<mat-toolbar class="p-0">
+
+    
+    <div fxFlex fxFill fxLayout="row" fxLayoutAlign="center center">
+
+        <div fxFlex="20" fxLayout="column" fxLayoutAlign="center start">
+             <div fxFlex="1 0 auto" fxLayout="row">
+                        <button mat-icon-button class="toggle-button-navbar"
+                    *ngIf="!noNav"
+                    (click)="toggleSidebarOpened('navbar')" fxHide.gt-sm>
+                        <mat-icon>menu</mat-icon>
+                    </button>
+
+                    <button mat-icon-button class="toggle-button-navbar"
+                            *ngIf="!noNav"
+                            (click)="toggleSidebarFolded('navbar')" fxHide fxShow.gt-sm>
+                        <mat-icon>menu</mat-icon>
+                    </button>
+                    <div class="logo ml-16" fxHide.xs="true">
+                    <img class="logo-icon" src="assets/images/logos/logo.png">
+                    </div>
+             </div>
+            
+            
+
+        </div>
+       <div class="" fxFlex="60" fxLayout="column" fxLayoutAlign="start center">
+            <div fxFlex fxFill fxLayout="row" fxLayoutAlign="start center">
+              <div fxFlex="1 0 auto" fxLayout="row" fxLayoutAlign="start center">
+                   <div class="logo ml-16">
+                    <img class="logo-icon" src="assets/images/logos/logo.png">
+                    </div>
+                    <div class="logo ml-16">
+                    <img class="logo-icon" src="assets/images/logos/logo.png">
+                    </div>
+                    <div class="logo ml-16">
+                    <img class="logo-icon" src="assets/images/logos/logo.png">
+                    </div>
+              </div>
+               <div fxFlex="0 1 auto" fxLayout="row" fxLayoutAlign="start center">
+                   <button mat-button fxHide fxShow.gt-xs
+                    class="language-button"
+                    [matMenuTriggerFor]="languageMenu">
+                        <div fxLayout="row" fxLayoutAlign="center center">
+                             <span class="iso text-capitalize mr-8">{{selectedLanguage.id}}</span>
+                            <img class="flag mr-8" [src]="'assets/images/flags/'+selectedLanguage.flag+'.png'">
+                           
+                        </div>
+                    </button>
+
+                    <mat-menu #languageMenu="matMenu" [overlapTrigger]="false">
+
+                        <button mat-menu-item *ngFor="let lang of languages" (click)="setLanguage(lang)">
+                            <div fxLayout="row" fxLayoutAlign="start center">
+                                <img class="flag mr-16" [src]="'assets/images/flags/'+lang.flag+'.png'">
+                                <span class="iso">{{lang.title}}</span>
+                            </div>
+                        </button>
+
+                    </mat-menu>
+
+                    <button mat-button fxHide fxShow.gt-xs
+                    class="language-button"
+                    >
+                        <div fxLayout="row" fxLayoutAlign="center center">
+                            Loreum Ipsum
+                            <mat-icon matSuffix matTooltip="Account-Help" class="mat-help">help</mat-icon>
+                        </div>
+                    </button>
+
+               </div>
+            </div>
+       </div>
+        <div class="" fxFlex="20" fxLayout="column" fxLayoutAlign="center end">
+
+            <button mat-button [matMenuTriggerFor]="userMenu"
+                    class="user-button">
+                <div fxLayout="row" fxLayoutAlign="center center">
+                    <img class="avatar" src="assets/images/avatars/profile.jpg">
+                    <span class="username mr-12" fxHide fxShow.gt-sm>John Doe</span>
+                    <mat-icon class="s-16" fxHide.xs>keyboard_arrow_down</mat-icon>
+                </div>
+            </button>
+
+            <mat-menu #userMenu="matMenu" [overlapTrigger]="false">
+
+                <button mat-menu-item>
+                    <mat-icon>account_circle</mat-icon>
+                    <span>My Profile</span>
+                </button>
+
+                <button mat-menu-item class="">
+                    <mat-icon>mail</mat-icon>
+                    <span>Inbox</span>
+                </button>
+
+                <button mat-menu-item class="">
+                    <mat-icon>exit_to_app</mat-icon>
+                    <span>Logout</span>
+                </button>
+
+            </mat-menu>
+
+   
+
+           
+
+        </div>
+    </div>
+</mat-toolbar>

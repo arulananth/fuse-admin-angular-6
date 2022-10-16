@@ -1,0 +1,102 @@
+<div class="page-layout blank" id="admin-wrapper">
+
+
+ <form class="admin-form"  [formGroup]="addedForm">
+    <div class="admin-content">
+        <div class="admin-main-wrapper">
+            <mat-expansion-panel [expanded]="true" [disabled]="true">
+
+                <!-- main panal-title -->
+                <mat-expansion-panel-header class="panelHeader">
+                    <mat-panel-title class="main-tille">
+                       Loreum Ipsum
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <!-- end title -->
+                
+                <!-- main form-start -->
+                <div class="admin-main-form mr-tb5 br-t-dotted m-pad1 pad-l10 pad-r10 pad-lr3-rem">
+                    <div fxLayout="row" fxLayout.md="row" fxLayout.xs="column">
+                    	
+                        <div fxFlex="100" fxLayoutAlign="center center">
+                            <div class="admin-form-controll pad-r10">
+                                 <mat-form-field>
+                                    <mat-label>Loreum Ipsum</mat-label>
+                                    <input matInput placeholder="Loreum Ipsum" formControlName="addfield" required>
+                                     <mat-error *ngIf="submitted && f.addfield.errors">Please enter valid details</mat-error>
+                                    </mat-form-field>
+                            </div>
+                            <mat-icon matSuffix class="pad-r10" popover="Loreum Ipsum"
+                               popoverTitle="Loreum Ipsum"
+                               popoverPlacement="left"
+                               [popoverOnHover]="true"
+                               [popoverCloseOnClickOutside]="true"
+                               [popoverCloseOnMouseOutside]="false"
+                               [popoverDisabled]="false"
+                               [popoverAnimation]="true"
+                               [popoverDismissTimeout]="10000">help
+                          </mat-icon>
+
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- main form-end -->
+            </mat-expansion-panel>
+        </div>
+
+    </div>
+    <div class="admin-footer">
+        		<div fxLayout="row" fxLayout.lt-sm="column" fxLayoutGap="20px" class="bgs pad-lr3-rem">
+
+						<div fxFlex="100" fxLayoutAlign="end center" fxLayoutAlign.xs="center center" [fxLayout]="'row wrap'">
+
+						    <button type="submit" mat-button class="user-button btngreen mr-br mr-r1 mbl-mr-tb" (click)="onSubmit()">
+		                      <div fxLayout="row" class="cwhite font13" fxLayoutAlign="center center">
+		                         <mat-icon class="s-16 mr-12">save</mat-icon>
+		                          <span class="username">Loreum Ipsum</span>
+		                          
+		                      </div>
+		                     </button>
+
+
+                             <button type="button" mat-button class="user-button btnblue mr-br mr-r1 mbl-mr-tb" (click)="btnChange();reset()" *ngIf="!btnchange">
+                              <div fxLayout="row" class="cwhite font13" fxLayoutAlign="center center">
+                                 <mat-icon class="s-16 mr-12">save</mat-icon>
+                                  <span class="username">Loreum Ipsum</span>
+                                  
+                              </div>
+                             </button>
+
+                              <button type="button" mat-button class="user-button btnred mr-br mr-r1 mbl-mr-tb" (click)="openDelet()" *ngIf="btnchange">
+                              <div fxLayout="row" class="cwhite font13" fxLayoutAlign="center center">
+                                 <mat-icon class="s-16 mr-12">delete</mat-icon>
+                                  <span class="username">Loreum Ipsum</span>
+                                  
+                              </div>
+                             </button>
+
+
+		                     <button type="button" mat-button class="user-button btngray mr-br mr-r1 mbl-mr-tb" (click)="btnClickhome()">
+		                      <div fxLayout="row" class="cwhite font13" fxLayoutAlign="center center">
+		                         <mat-icon class="s-16 mr-12">clear</mat-icon>
+		                          <span class="username">Loreum Ipsum</span>
+		                          
+		                      </div>
+		                     </button>
+						    	           
+
+						</div>
+
+			   </div>
+        </div>
+        <div class="admin-success pad30" *ngIf="successmsgs">
+        <div fxLayout="row" fxLayout.lt-sm="column">
+            <div fxFlex="100" fxLayoutAlign="center center" fxLayoutAlign.xs="center center" [fxLayout]="'row wrap'" class="success-msg">
+                <p>Data added successfully</p>
+            </div>
+        </div>
+    </div>
+      </form>
+</div>
+

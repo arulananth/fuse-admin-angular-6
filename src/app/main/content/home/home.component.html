@@ -1,0 +1,23 @@
+<div class="page-layout" id="main-wrapper" fxFlex="100">
+
+<!-- dashcard component-->
+  <div fxLayout="row" [fxLayout]="'row wrap'">
+            <div fxFlex="25" fxFlex.sm="50" fxFlex.xs="100" *ngFor="let dash of dashCard"  class="pd-5">
+                <admin-dashcard [dashData]="dash"></admin-dashcard>
+            </div>
+        
+ </div>
+
+<!-- dashcard component-->
+
+
+<!-- profilecard component-->
+   <div fxLayout="row" [fxLayout]="'row wrap'">
+    <div *ngFor="let dash of profileCard" fxFlex.xs="100" fxFlex.sm="33.3" fxFlex="16.66"  class="pd-5 mr-tb-20">
+        <admin-profilecard [profileData]="dash"></admin-profilecard>
+    </div>
+  </div>
+<!-- profilecard component-->
+
+
+ </div>

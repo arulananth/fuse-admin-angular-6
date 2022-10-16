@@ -1,0 +1,70 @@
+<div class="page-layout blank" id="admin-wrapper">
+   <!-- form content/-->
+    <div class="admin-content">
+        <div class="admin-main-wrapper">
+            <mat-expansion-panel [expanded]="true" [disabled]="true">
+
+                <!-- main panal-title -->
+                <mat-expansion-panel-header class="panelHeader">
+                    <mat-panel-title class="main-tille">
+                       Loreum Ipsum
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                <!-- end title -->
+                <!-- main form-start -->
+
+                <div class="admin-main-form mr-tb5  m-pad1">
+                    <div fxLayout="row" fxLayout.md="row" fxLayout.xs="column">
+                    	<div fxFlex = "60" fxLayoutAlign="center center" class="admin-upoad">
+                    		<div class="upload-img text-center">
+                                 <button mat-button class="user-button btngreen mr-br mr-r1 mbl-mr-tb" (click) ="openDelet()">
+                                  <div fxLayout="row" class="cwhite font13" fxLayoutAlign="center center">
+                                     <mat-icon class="s-16 mr-12">cloud_upload</mat-icon>
+                                      <span class="username">Loreum Ipsum</span>
+                                      
+                                  </div>
+                                 </button>
+                                 <p><b>Loreum ipsum: JPG, PNG</b></p>
+                                 <p><b>Loreum Ipsum</b></p>
+                                  <div class="preview" *ngIf="preview">
+                                     <img [src]="'assets/images/avatars/'+imgs+'.jpg'" >
+                                  </div>
+
+                            </div>
+                    	</div>
+                        
+                    </div>
+                </div>
+                <!-- main form-end -->
+            
+            </mat-expansion-panel>
+        </div>
+
+    </div><!-- form content/-->
+
+    <!-- form footer-->
+    <div class="admin-footer">
+      <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutGap="20px" class="bgs">
+				<div fxFlex="100" fxLayoutAlign="end center" [fxLayout]="'row wrap'" fxLayoutAlign.xs="center center">
+
+           <button mat-button class="user-button btngray mr-br mr-r1 mbl-mr-tb" (click)="btnClickhome()">
+            <div fxLayout="row" class="cwhite font13" fxLayoutAlign="center center">
+               <mat-icon class="s-16 mr-12">clear</mat-icon>
+                <span class="username">Loreum Ipsum</span>
+                
+            </div>
+           </button>
+
+				</div>
+			</div>
+    </div><!-- form footer /-->
+
+
+
+    <div >
+
+    </div>
+</div>
+
+
+
